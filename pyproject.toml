@@ -1,0 +1,15 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "RAG system for MTG rules with semantic and structural reasoning"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+  "requests",
+  "beautifulsoup4",
+  "sentence-transformers",
+  "qdrant-client",
+]
+
+[tool.uv]

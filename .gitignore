@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+uv.lock
+.env
+.idea/
+.coverage
+coverage.xml
+qdrant_data/
+downloads/
+output/
