@@ -1,4 +1,4 @@
-# MTG Judge Assistant
+# MTG Judge Assistant (WIP)
 
 A semantic, LLM-assisted assistant for **Magic: The Gathering** rules interpretation and judging.  
 Built using **Qdrant**, **sentence-transformers**, and optionally **Meta Llama 3 Instruct** or other chat-capable LLMs.
