@@ -1,3 +1,5 @@
+Those are just unsorted notes - please disregard them :) 
+
 ```cmd 
 docker run -p 6333:6333 -v $(pwd)/qdrant_data:/qdrant/storage qdrant/qdrant
 ```
