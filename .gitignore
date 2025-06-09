@@ -8,4 +8,3 @@ uv.lock
 coverage.xml
 qdrant_data/
 downloads/
-output/
