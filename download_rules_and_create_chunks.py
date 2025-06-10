@@ -93,8 +93,6 @@ def extract_atomic_rules(filepath, source_doc_id):
                 "text": full_text,
                 "examples": examples,
                 "token_count": len(full_text.split()),
-                "overlaps_with": [],
-                "rule_number_list": [rule_number],
                 "source_doc": source_doc_id
             }
             chunks.append(chunk_data)
