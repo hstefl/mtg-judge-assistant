@@ -129,7 +129,6 @@ def extract_glossary_chunks(filepath, source_doc_id):
                 if definition:
                     chunks.append({
                         "chunk_id": f"glossary-{chunk_id:04d}",
-                        "type": "glossary",
                         "term": current_term,
                         "definition": definition,
                         "token_count": len(definition.split()),
@@ -150,7 +149,6 @@ def extract_glossary_chunks(filepath, source_doc_id):
         definition = " ".join(definition_lines).strip()
         chunks.append({
             "chunk_id": f"glossary-{chunk_id:04d}",
-            "type": "glossary",
             "term": current_term,
             "definition": definition,
             "token_count": len(definition.split()),
