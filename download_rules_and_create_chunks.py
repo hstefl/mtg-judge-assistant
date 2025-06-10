@@ -80,19 +80,14 @@ def extract_atomic_rules(filepath, source_doc_id):
                 examples.append(lines[j])
                 j += 1
 
-            # Build full text with examples included
-            full_text = base_text
-            if examples:
-                full_text += "\n" + "\n".join(examples)
-
             chunk_data = {
                 "chunk_id": f"line-{chunk_counter:05d}",
                 "rule_root": rule_root,
                 "rule_group": rule_group,
                 "rule_number": rule_number,
-                "text": full_text,
+                "text": base_text,
                 "examples": examples,
-                "token_count": len(full_text.split()),
+                "token_count": len(base_text.split()),
                 "source_doc": source_doc_id
             }
             chunks.append(chunk_data)
